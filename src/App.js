@@ -4,6 +4,7 @@ import Cards from './components/Cards';
 class App extends Component {      
     state = {
         schedules: [],
+        currentSelection: ''
     }
     componentDidMount() {
         // create a temporary array to build out before we set the final value to the state at startup
@@ -51,9 +52,12 @@ class App extends Component {      
             gridColumnGap: '0.5em',
             gridRowGap: '1em',
             marginTop: '25px',
-            marginLeft: '50px'
+            marginLeft: '50px',
+            width: '100%'
         }
     }
+
+    
     
     render() {
         return(
